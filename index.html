@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sobre</title>
+    <link rel="shortcut icon" href="/img/icon.png">
+    <script src="https://kit.fontawesome.com/6bda94a8de.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <!--order 1-->
+        <div class="logos">
+            <img class="logoBgWhite" src="fotos/logo.png" alt="">
+            <img class="logoBgBlack" src="fotos/logo2.png" alt="">
+        </div>
+
+        <!--order 2-->
+        <nav id="menu">
+            <ul id="imenu-list" class="menu-list">
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Curiosidades</a></li>
+                <li><a href="#">Campanhas</a></li>
+            </ul>
+            <script>
+
+                var menuButton = document.getElementById("menu-btn");
+                var menu = document.getElementById("menu");
+
+                menu.style.transition("2s");
+
+                function showmenu() {
+                    if (menu.style.display === "none") {
+                        menu.style.display = "block";
+                    } else {
+                        menu.style.display = "none";
+                    }
+                };
+
+            </script>
+        </nav>
+
+        <!--order 3-->
+        <div class="dark_btn">
+            <input type="checkbox" name="#" id="toggle" class="toggle-btn">
+            <label for="toggle" class="toggle-label" id="change">
+                <i id="sun" class="fa-solid fa-cloud-sun"></i>
+                <i id="moon" class="fa-solid fa-moon"></i>
+            </label>
+
+            <script>
+                const toggleBtn = document.getElementById('toggle');
+                const body = document.body;
+
+                toggleBtn.addEventListener('click', function () {
+                    body.classList.toggle('dark')
+                });
+
+                function proximoSlide() {
+
+                    const radios = document.querySelectorAll('input[type="radio"]');
+
+                    let checkedIndex = [...radios].findIndex(radio => radio.checked);
+
+                    radios[checkedIndex].checked = false;
+
+                    checkedIndex = (checkedIndex + 1) % radios.length;
+
+                    radios[checkedIndex].checked = true;
+                };
+
+                function slideAnterior() {
+
+                    const radios = document.querySelectorAll('input[type="radio"]');
+
+                    let checkedIndex = [...radios].findIndex(radio => radio.checked);
+
+                    radios[checkedIndex].checked = false;
+
+                    checkedIndex = (checkedIndex - 1 + radios.length) % radios.length;
+
+                    radios[checkedIndex].checked = true;
+                };
+            </script>
+        </div>
+
+        <!--order 4-->
+        <button onclick="showmenu()" id="menu-btn"><i class="fa-solid fa-water"></i></button>
+    </header>
+
+    <main>
+        <h1>Nós somos a Limpo Ambiente</h1>
+        <div class="mainn">
+            <p>Na Limpo Ambiente, nos comprometemos com a sustentabilidade, minimizando o impacto ambiental e promovendo a reciclagem. Valorizamos a inovação, a educação ambiental e a transparência, colaborando para alcançar metas sustentáveis e priorizando o bem-estar da comunidade.</p>
+        </div>
+
+        <div class="cardes">
+            <div class="card">
+                <img src="fotos/icon.png" alt="" height="80px">
+                <h2>Missão</h2>
+                <p>Nossa missão é levar a educação ambiental para todos e fazer com que as pessoas adotem práticas de reciclagem no dia a dia, gerando assim a conservação do meio ambiente e reduzindo o impacto ambiental.</p>
+            </div>
+
+            <div class="card">
+                <img src="fotos/icon.png" alt="" height="80px">
+                <h2>valores</h2>
+                <p>Valorizamos o respeito por todas as formas de vida, mostramos isso em nossas ações e práticas para a preservação de um ambiente mais saudável para todos os seres vivos. Prezamos  pelo engajamento a comunidade, incentivando a participação ativa em iniciativas de reciclagem e sustentabilidade.</p>
+            </div>
+
+            <div class="card">
+                <img src="fotos/icon.png" alt="" height="80px">
+                <h2 class="h2">visão</h2>
+                <p>Visamos ser uma empresa ativa na causa ambiental, promovendo práticas sustentáveis de reciclagem e gerenciamento de resíduos. Nosso compromisso é educar a comunidade, incentivar hábitos ecológicos, e colaborar para reduzir o impacto ambiental, inspirando um futuro mais verde e saudável para todos.</p>
+            </div>
+        </div>
+
+
+        <div class="colaboradores">
+        <h3>Conheça os colaboradores</h3>
+       </div>
+
+       
+        <div class="membros">
+            
+            <div class="denner">
+                <img src="fotos/denner.jfif" alt="" height="200px"  width="150px">
+                <p>Denner Simão </p>
+            </div>
+
+
+            <div class="gio">
+                <img src="fotos/giovanna4.jfif" alt="" height="200px" width="150px">
+                <p>Giovanna Castro</p>
+            </div>
+
+            <div class="kim">
+                <img src="fotos/kim.jfif" alt="" height="200px"  width="150px">
+                <p>Kimberly Escobar</p>
+            </div>
+
+            <div class="laiz">
+                <img src="fotos/laiz.jfif" alt="" height="200px" width="150px">
+                <p>Laiz Borges</p>
+            </div>
+        </div>
+
+
+    </main>
+
+  <br> <br> <br>
+    <footer>
+        <img src="fotos/logo.png" alt="" height="120px">
+        <hr>
+        <div class="tudo">
+            <div class="voltar">
+                <h3>Volte para:</h3>
+                <a href="">Home</a>
+            </div>
+
+
+            <div class="links_rapidos">
+                <h3>Links Rápidos</h3>
+                <a href="">Siga nosso linktree</a>
+                <a href="/pag_ind/main.html">Sobre nós</a>
+                <a href="#">Curiosidades</a>
+                <a href="#">Campanhas</a>
+            </div>
+
+           
+        </div>
+
+        <p>&copy;2024 Desenvolvido por Limpo Ambiente</p>
+    </footer>
+
+
+</body>
+
+</html>
