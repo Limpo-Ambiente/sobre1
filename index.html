@@ -7,22 +7,22 @@
     <title>sobre</title>
     <link rel="shortcut icon" href="/img/icon.png">
     <script src="https://kit.fontawesome.com/6bda94a8de.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sobre.css">
 </head>
 
 <body>
     <header>
         <!--order 1-->
         <div class="logos">
-            <img class="logoBgWhite" src="fotos/logo.png" alt="">
-            <img class="logoBgBlack" src="fotos/logo2.png" alt="">
+            <img class="logoBgWhite" src="/img/logo.png" alt="">
+            <img class="logoBgBlack" src="/img/logo2.png" alt="">
         </div>
 
         <!--order 2-->
         <nav id="menu">
             <ul id="imenu-list" class="menu-list">
                 <li><a href="#">Sobre nós</a></li>
-                <li><a href="#">Curiosidades</a></li>
+                <li><a href="/curiosidades/curiosidades.html">Curiosidades</a></li>
                 <li><a href="#">Campanhas</a></li>
             </ul>
             <script>
@@ -58,32 +58,6 @@
                 toggleBtn.addEventListener('click', function () {
                     body.classList.toggle('dark')
                 });
-
-                function proximoSlide() {
-
-                    const radios = document.querySelectorAll('input[type="radio"]');
-
-                    let checkedIndex = [...radios].findIndex(radio => radio.checked);
-
-                    radios[checkedIndex].checked = false;
-
-                    checkedIndex = (checkedIndex + 1) % radios.length;
-
-                    radios[checkedIndex].checked = true;
-                };
-
-                function slideAnterior() {
-
-                    const radios = document.querySelectorAll('input[type="radio"]');
-
-                    let checkedIndex = [...radios].findIndex(radio => radio.checked);
-
-                    radios[checkedIndex].checked = false;
-
-                    checkedIndex = (checkedIndex - 1 + radios.length) % radios.length;
-
-                    radios[checkedIndex].checked = true;
-                };
             </script>
         </div>
 
@@ -99,19 +73,19 @@
 
         <div class="cardes">
             <div class="card">
-                <img src="fotos/icon.png" alt="" height="80px">
+                <i class="fa-solid fa-medal"></i>
                 <h2>Missão</h2>
                 <p>Nossa missão é levar a educação ambiental para todos e fazer com que as pessoas adotem práticas de reciclagem no dia a dia, gerando assim a conservação do meio ambiente e reduzindo o impacto ambiental.</p>
             </div>
 
             <div class="card">
-                <img src="fotos/icon.png" alt="" height="80px">
+                <i class="fa-solid fa-hand-holding-heart"></i>
                 <h2>valores</h2>
                 <p>Valorizamos o respeito por todas as formas de vida, mostramos isso em nossas ações e práticas para a preservação de um ambiente mais saudável para todos os seres vivos. Prezamos  pelo engajamento a comunidade, incentivando a participação ativa em iniciativas de reciclagem e sustentabilidade.</p>
             </div>
 
             <div class="card">
-                <img src="fotos/icon.png" alt="" height="80px">
+                <i class="fa-solid fa-eye"></i>
                 <h2 class="h2">visão</h2>
                 <p>Visamos ser uma empresa ativa na causa ambiental, promovendo práticas sustentáveis de reciclagem e gerenciamento de resíduos. Nosso compromisso é educar a comunidade, incentivar hábitos ecológicos, e colaborar para reduzir o impacto ambiental, inspirando um futuro mais verde e saudável para todos.</p>
             </div>
