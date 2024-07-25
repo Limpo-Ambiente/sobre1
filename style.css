@@ -276,6 +276,8 @@ header {
 }
 /*-----------------/HEADER-----------------*/
 
+ /*-----------------inicia h1 e texto main-----------------*/
+
 h1 {
     text-align: center;
     color: #597bfe;
@@ -291,14 +293,16 @@ h1 {
     font-size: 20px; 
 
 }
+/*-----------------acaba h1 e texto main-----------------*/
+
+/*-----------------inicia cards missao, visao e valores-----------------*/
 
 .dark .card{
     background-color: #536ac4;
- 
 
 }
 
-.cardes {
+    .cardes {
     display: grid;
     grid-template-columns: 300px 300px 300px;
     justify-content: center;
@@ -330,16 +334,11 @@ h1 {
             color: #ffffff;
             width: 270px;
         }
-    
-    
-    
     }
-
-
 }
+/*-----------------acaba cards missao, visao e valores-----------------*/
 
-
-
+/*-----------------inicia card colaboradores-----------------*/
 .membros {
     display: flex;
     gap: 7%;
@@ -442,6 +441,10 @@ h1 {
     margin-top: 10%;
 }
 
+/*-----------------acaba cards colaboradores-----------------*/
+
+
+/*-----------------inicia responsivo-----------------*/
 @media all and (max-width:800px) {
 
     .cardes {
